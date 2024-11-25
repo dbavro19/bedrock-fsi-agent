@@ -1,0 +1,12 @@
+{
+  "name": "get_realtime_market_data",
+  "description": "Retrieve real-time market data for a specific stock or asset including current price, volume, and daily movement",
+  "parameters": {
+    "symbol": {
+      "description": "The ticker symbol for the stock/asset (e.g., 'AAPL' for Apple Inc)",
+      "required": "True",
+      "type": "string"
+    }
+  },
+  "requireConfirmation": "DISABLED"
+}
