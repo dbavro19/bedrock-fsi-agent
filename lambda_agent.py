@@ -14,7 +14,7 @@ def get_realtime_market_data(symbol: str) -> Dict[str, Any]:
     """
     print("Calling the get_realtime_market_data Function")
 
-    api_url = f"https://api.polygon.io/v2/aggs/ticker/{symbol}/prev?adjusted=true&apiKey=SlbrLUrbIIp7Ympovk9Ss7QTF1hh18o4"
+    api_url = f"https://api.polygon.io/v2/aggs/ticker/{symbol}/prev?adjusted=true&apiKey="
     response = requests.request("GET", api_url)
 
     # Parse the JSON response
@@ -48,7 +48,7 @@ def get_current_news(
     """
     print("Calling get_current_news")
 
-    api_url = f"https://api.polygon.io/v2/reference/news?ticker={search_term}&limit=3&apiKey=SlbrLUrbIIp7Ympovk9Ss7QTF1hh18o4"
+    api_url = f"https://api.polygon.io/v2/reference/news?ticker={search_term}&limit=3&apiKey="
     response = requests.request("GET", api_url)
     
     data = response.json()
