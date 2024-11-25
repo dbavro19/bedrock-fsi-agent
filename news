@@ -1,0 +1,12 @@
+{
+  "name": "get_current_news",
+  "description": "Retrieve current financial news articles and press releases for a specific ticket symbol",
+  "parameters": {
+    "search_term": {
+      "description": "The Stock or company symbol to search for (ie. AAPL for Apple Inc)",
+      "required": "True",
+      "type": "string"
+    }
+  },
+  "requireConfirmation": "DISABLED"
+}
